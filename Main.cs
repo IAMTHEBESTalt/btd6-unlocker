@@ -1,6 +1,6 @@
 ﻿using BTD_Mod_Helper;
 using BTD_Mod_Helper.Extensions;
-using BTD_Mod_Helper.Api;
+using BTD_Mod_Helper.Api;https://www.youtube.com/watch?v=8N4z92vhov0
 using System.Collections.Generic;
 using BTD_Mod_Helper.Api.ModOptions;
 using BTD_Mod_Helper.Api.Components;
@@ -68,13 +68,13 @@ namespace BTD6Unlocker
             //f3 gives monkey money and monkey xp
             if (moneyAndXPHotkey.JustPressed()) 
             {
-                GameExt.AddMonkeyMoney(Game.instance, 1000000);
+                GameExt.AddMonkeyMoney(Game.instance, 2000);
 
                 Il2CppSystem.Collections.Generic.List<string> monkes = Helpers.ValidBaseTowerNames();
                 foreach (string monke in monkes)
                 {
-                    GameExt.GetBtd6Player(Game.instance).AddTowerXP(monke, 1000000);
-                    MelonLogger.Msg($"Added 1000000 xp to all monkeys");
+                    GameExt.GetBtd6Player(Game.instance).AddTowerXP(monke, 0);
+                    MelonLogger.Msg($"Added xp to all monkeys");
                 }
             }
 
